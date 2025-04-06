@@ -23,17 +23,18 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px;
-      background: white;
+      background: #0a2e78;
       border-bottom: 1px solid #ccc;
     }
     .header-title {
       font-weight: bold;
       font-size: 20px;
-      color: #1a2f6b;
+      color: white;
     }
     .user-info {
       text-align: right;
       font-size: 14px;
+      color: white;
     }
     .user-info div:first-child {
       font-weight: bold;
@@ -55,14 +56,20 @@
       font-weight: bold;
       width: 100%;
       max-width: 240px;
+      text-align: left;
     }
     .btn.view {
-      background-color: #0a2e78;
+      background-color: #054fc6;
       color: white;
     }
     .btn.add {
       background-color: #dbe1ee;
       color: #1a2f6b;
+    }
+    .btn.add a {
+      color: #1a2f6b;
+      text-decoration: none;
+      display: block;
     }
     .date-info {
       text-align: right;
@@ -154,7 +161,7 @@
 
     <div class="buttons">
       <button class="btn view">VIEW VIOLATION<br><small>VIEW VIOLATION REPORTS</small></button>
-      <button class="btn add">ADD VIOLATION<br><small>CREATE ENTRY FOR VIOLATION</small></button>
+      <button class="btn add"><a href="violationDetails.html">ADD VIOLATION<br><small>CREATE ENTRY FOR VIOLATION</small></a></button>
       <div class="date-info">
         <div>TODAY</div>
         <div style="font-size: 22px; font-weight: bold;">MARCH 14, 2025</div>
