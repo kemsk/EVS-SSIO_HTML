@@ -1,74 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XU OSA Entry Violation System - Login</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <style>
-        body { 
-            background: #f8f9fa;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container-wrapper {
-            display: flex;
-            max-width: 900px;
-            width: 100%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        .info-section {
-            background: #0d3b66;
-            color: white;
-            padding: 2rem;
-            flex: 1;
-        }
-        .info-section h3 {
-            font-weight: bold;
-        }
-        .login-section {
-            background: white;
-            padding: 2rem;
-            flex: 1;
-        }
-        .login-section h3 {
-            color: #0d3b66;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>XU OSA Entry Violation System - Login</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <style>
+    body {
+      background: #f8f9fa;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .container-wrapper {
+      width: 100%;
+      max-width: 900px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: white;
+    }
+    .info-section {
+      background: #0d3b66;
+      color: white;
+      padding: 2rem;
+    }
+    .info-section h3 {
+      font-weight: bold;
+    }
+    .login-section {
+      background: white;
+      padding: 2rem;
+    }
+    .login-section h3 {
+      color: #0d3b66;
+    }
+
+    @media (max-width: 767.98px) {
+      .info-section,
+      .login-section {
+        padding: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container-wrapper">
-        <div class="info-section">
-            <h3>XAVIER UNIVERSITY - OFFICE OF STUDENT AFFAIRS</h3>
-            <h4><strong>ENTRY VIOLATION SYSTEM</strong></h4>
-            <p><em>Is this your first time here?</em></p>
-            <p>Your username is your University ID number/email address and your default password is a combination of your Lastname, in capital letters, and the last four (4) digits of your University ID number.</p>
-            <p><strong>Example using University email:</strong></p>
-            <p>Username: 2013001934@my.xu.edu.ph<br> Password: LEE1934</p>
-            <small>*This system is for SSIO use only</small>
-        </div>
-        <div class="login-section">
-            <h3> Hello there! </h3>
-            <p>Enter your details to proceed.</p>
-            <form>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" required>
-                </div>
-                <div class="mb-3 text-end">
-                    <a href="#">Forgotten password?</a>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Log In</button>
-            </form>
-        </div>
+  <div class="container-wrapper row g-0">
+    <!-- Info Section -->
+    <div class="col-md-6 info-section d-flex flex-column justify-content-center">
+      <h3>XAVIER UNIVERSITY - OFFICE OF STUDENT AFFAIRS</h3>
+      <h4><strong>ENTRY VIOLATION SYSTEM</strong></h4>
+      <p><em>Is this your first time here?</em></p>
+      <p>Your username is your University ID number/email address and your default password is a combination of your Lastname, in capital letters, and the last four (4) digits of your University ID number.</p>
+      <p><strong>Example using University email:</strong></p>
+      <p>Username: 2013001934@my.xu.edu.ph<br> Password: LEE1934</p>
+      <small>*This system is for SSIO use only</small>
     </div>
+
+    <!-- Login Section -->
+    <div class="col-md-6 login-section d-flex flex-column justify-content-center">
+      <h3>Hello there!</h3>
+      <p>Enter your details to proceed.</p>
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" required />
+        </div>
+        <div class="mb-3 text-end">
+          <a href="#">Forgotten password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Log In</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
